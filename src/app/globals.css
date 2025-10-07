@@ -5,3 +5,28 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer base {
+  .rdp {
+    --rdp-cell-size: 40px;
+    --rdp-accent-color: #007CF0;
+    --rdp-background-color: #00DFD8;
+    --rdp-accent-color-dark: #007CF0;
+    --rdp-background-color-dark: #00DFD8;
+    --rdp-outline: 2px solid var(--rdp-accent-color);
+    --rdp-outline-selected: 3px solid var(--rdp-accent-color);
+    margin: 1em 0;
+  }
+  .rdp-day_selected {
+    background-color: var(--rdp-background-color) !important;
+    color: black;
+  }
+  .rdp-day_today {
+    color: var(--rdp-accent-color) !important;
+    font-weight: bold;
+  }
+  .event-day {
+    font-weight: bold;
+    color: #00DFD8 !important;
+  }
+}

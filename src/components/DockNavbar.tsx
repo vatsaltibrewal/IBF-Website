@@ -1,7 +1,8 @@
 'use client';
 
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { Home, Calendar, Users, Info, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Home, Calendar, Users, Info, Linkedin } from "lucide-react";
+import { SiX, SiInstagram, SiGithub } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 
 export default function DockNavbar() {
@@ -13,9 +14,9 @@ export default function DockNavbar() {
   ];
 
   const socialItems = [
-    { href: "https://x.com/IBF_Community", icon: <Twitter className="h-5 w-5" />, label: "X" },
+    { href: "https://x.com/IBF_Community", icon: <SiX className="h-5 w-5" />, label: "X" },
     { href: "https://linkedin.com/company/indian-blockchain-fraternity", icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn" },
-    { href: "https://instagram.com/ibf.bu", icon: <Instagram className="h-5 w-5" />, label: "Instagram" },
+    { href: "https://SiInstagram.com/ibf.bu", icon: <SiInstagram className="h-5 w-5" />, label: "SiInstagram" },
   ];
 
   return (

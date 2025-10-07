@@ -17,6 +17,7 @@ const config: Config = {
       animation: {
         "gradient": "gradient 8s linear infinite",
         "line-shadow": "line-shadow 15s linear infinite",
+        "background-position-spin": "background-position-spin 3s infinite alternate",
       },
       keyframes: {
         "gradient": {
@@ -31,6 +32,10 @@ const config: Config = {
           "100%": {
             "background-position": "100% -100%",
           },
+        },
+        "background-position-spin": {
+          "0%": { "background-position": "top center" },
+          "100%": { "background-position": "bottom center" },
         },
       },
     },
